@@ -1,14 +1,15 @@
 /*Find smallest character by iterative method*/
 
 #include <stdio.h>
+#include <assert.h>
 char smallest_character(char str[],char c);
 int main()
 {
-    char const testStr[] = {'c','a','x','b'};
-    char const testChar = 'z';
+    char testStr[] = {'c','a','x','b'};
+    char testChar = 'z';
     assert(testStr != NULL);     /* cannot be NULL */
     assert(*testStr != '\0');    /* cannot be empty */
-    char result = smallest_character(test,'z');
+    char result = smallest_character(testStr,testChar);
     printf("%c\n",result);
     return 0;
 }
